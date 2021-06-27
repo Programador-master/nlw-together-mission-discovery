@@ -1,0 +1,210 @@
+.content{
+    max-width: min(100rem, 90%);
+}
+
+#room header{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#room .header::after{
+    content: "";
+    width: 85%;
+    height: 0.25rem;
+    background-color: var(--red);
+    display: block;
+    margin: 0.5rem auto 0;
+}
+
+#room header .buttons{
+    display: flex;
+
+}
+
+#room header .buttons .button:nth-child(1){
+    margin-right: .8rem;
+    padding: 1.3rem 1.6rem;
+    background-color: transparent;
+    border: 0.15rem solid var(--linear);
+    color: var(--linear);
+}
+#room header .buttons .button:nth-child(1) img{
+    margin-left: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+#room header .buttons .button:nth-child(2){
+    padding: 1.3rem 3.2rem;
+    width: 20rem;
+    background-color: var(--linear);
+}
+#room header .buttons .button:nth-child(2) img{
+    width: 2rem;
+    height: 2rem;
+}
+
+#room main{
+    margin-top: 3rem;
+}
+
+#question-form h2{
+    font-family: "Poppins", sans-serif;
+    font-size: 2.8rem;
+    color: var(--linear);
+    font-weight: 700;
+    line-height: 4.2rem;
+
+    margin-bottom: 2.4rem;
+}
+
+#question-form form{
+    border: 0.15rem solid var(--greenBlue);
+    border-radius: 0 0.8rem 0.8rem;
+    padding: 1.6rem;
+    background-color: transparent;
+    margin-bottom: 1.6rem;
+}
+
+#question-form form footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#question-form form footer > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#question-form form > div > p{
+    display: flex;
+    align-items: center;
+    color: var(--iconsAndDeails);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+#question-form form p img{
+    margin-right: 0.9rem;
+}
+
+#question-form textarea{
+    background-color: transparent;
+    resize: none;
+    width: 100%;
+    border: none;
+    color: white;
+}
+
+#question-form form footer button{
+    height: auto;
+    padding: .8rem 2.4rem;
+    line-height: 2.4rem
+}
+
+textarea::placeholder{
+    color: var(--greenBlue);
+}
+
+#question-form form div input{
+    background-color: var(--linear);
+    color: white;
+    height: auto;
+    padding: 0.8rem 2.4rem;
+    line-height: 2.4rem;
+    border: none;
+}
+
+.question-wrapper{
+    border-radius: 0 0.8rem .8rem .8rem;
+    background-color: var(--lightBlue);
+    margin: 0.5rem 0.5rem .8rem;
+    padding: 2.4rem;
+    
+}
+
+.question-wrapper .questions-content{
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.question-wrapper .questions-content p{
+    margin-left: 1.6rem;
+    word-wrap: break-word;
+    display: flex;
+    align-items: center;
+    min-height: 5.5rem;
+    color: var(--black);
+}
+
+.question-wrapper .questions-content .users{
+    background-color: var(--red);
+    clip-path: circle();
+    padding: 1.4rem;
+}
+
+.question-wrapper .actions{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.question-wrapper .actions > a{
+    color: var(--grey);
+    display: flex;
+    align-items: center;
+}
+
+.question-wrapper .actions > a:nth-child(2){
+    margin-left: 2.4rem;
+}
+
+.question-wrapper .actions > a > img{
+    margin-right: 0.8rem;
+}
+
+#questions .msm{
+    color: var(--black);
+}
+
+#questions{
+    overflow-y: scroll;
+    height: 30rem;
+    border: 1px solid white;
+    border-radius: 0.8rem;
+}
+
+.question-wrapper.read{
+    background-color: var(--greyMedium);
+}
+
+.question-wrapper.read .questions-content .users{
+    background-color: var(--greyred);
+}
+
+.no-questions{
+    text-align: center;
+    margin-top: 5.2rem;
+}
+.no-questions img{
+    max-width: 100%;
+    margin-bottom: 1.2rem;
+}
+.no-questions p{
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.no-questions p + p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;   
+    margin-top: 1.3rem;
+    line-height: 1.9rem;
+}

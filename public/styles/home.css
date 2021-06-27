@@ -1,0 +1,125 @@
+.content{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 11.4rem 1fr;
+
+    grid-template-areas: 
+    'header header'
+    'left right'
+}
+
+header{
+    grid-area: header;
+}
+
+
+
+header::after{
+    content: "";
+    width: 85%;
+    height: 0.25rem;
+    background-color: var(--red);
+    display: block;
+    margin: 1rem auto 0;
+}
+
+.bg{
+    grid-area: left;
+    background-image: url('../images/back-home.svg');
+    background-repeat: no-repeat;
+    background-size:  contain;
+    background-position-x: -5rem;
+
+}
+
+main{
+    grid-area: right;
+
+    display: flex;
+    align-items: center;
+    
+}
+
+main .container{    
+    width: min(36.3rem, 100%);
+}
+
+main h2{
+    font-family: 'Poppins', sans-serif;
+    color: var(--linear);
+    font-size: clamp(20px, 5vw, 2.8rem);
+    margin-bottom: 2.4rem;
+}
+
+.button{
+    color: white;
+    border: 0.15rem solid var(--linear);
+}
+
+button{
+    border: none;
+}
+
+input{
+        border: 0.15rem solid var(--greenBlue);
+        padding: 0 1.6rem;
+        color: var(--greenBlue);
+        outline: none;
+}
+
+input::placeholder{
+    color: var(--greenLight);
+}
+
+input, .button{
+    background-color: transparent;
+}
+
+input, button, .button{
+    width: 100%;
+    margin-bottom: 1.8rem;
+}
+
+/* Separator Line */
+.separator{
+    display: flex;
+    align-items: center;
+
+    margin: 4rem 2rem;
+}
+
+.separator div:nth-child(2){
+    color: var(--greenBlue);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding: 0 1.35rem;
+    line-height: 0;
+}
+
+.separator div:nth-child(1),
+.separator div:nth-child(3){
+    background: var(--greenBlue);
+    width: 100%;
+    height: 1px;
+}
+
+.circle{
+    background-color: #5498ff2a;
+    position: fixed;
+}
+
+.circle.topRight{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 0 0 0 100%;
+    top: 0;
+    right: 0;
+}
+
+.circle.bottomRight{
+    width: 15rem;
+    height: 15rem;
+    bottom: -11rem;
+    right: 5rem;
+    border-radius: 100%;
+}
